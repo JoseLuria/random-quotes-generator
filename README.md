@@ -1,4 +1,4 @@
-# How to run this proyect
+# How to run this project
 
 First clone the repository form GitHub:
 ```
@@ -13,6 +13,17 @@ npm install
 Finally, start the server with the following command:
 ```
 npm start
+```
+
+# Running this project with Docker
+
+1. Build Container Image
+```
+docker build -t random-quotes-generator:1.0 .
+```
+2. Run Container and expose port 80
+```
+docker run --rm -it -p 80:80 --name random-quotes-generator random-quotes-generator:1.0
 ```
 ## Built with
 - [React](https://reactjs.org/)
